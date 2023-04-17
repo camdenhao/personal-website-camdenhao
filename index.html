@@ -2,61 +2,104 @@
 <html>
     <head>
         <title>Camden Hao</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./font-awesome/css/brands.min.css">
+        <link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/f77201ed66.js" crossorigin="anonymous"></script>
     </head>
     <body>
     <header>
         <nav>
-            <a>Camden Hao</a>
+            <p id="header-name">Camden Hao</p>
             <a>About me</a>
             <a>Contact</a>
         </nav>
     </header>
-        <section>
-            <h1>Hi! My name is Camden Hao</h1>
+        <section id="cover-section">
+            <h1 id="intro-header">Hi! My name is Camden Hao</h1>
             <!-- Example of image from internet (copy image address) -->
-            <img src="https://media.licdn.com/dms/image/D4E03AQE1CvYf57HreA/profile-displayphoto-shrink_800_800/0/1667332820049?e=2147483647&v=beta&t=q-sqyY6dISmttLJrNCyOP_BrLvRx88RZUIacBjcHTj8" height="500" width="500" alt="my linkedin photo!"/> 
+            <!-- <img src="https://media.licdn.com/dms/image/D4E03AQE1CvYf57HreA/profile-displayphoto-shrink_800_800/0/1667332820049?e=2147483647&v=beta&t=q-sqyY6dISmttLJrNCyOP_BrLvRx88RZUIacBjcHTj8" height="500" width="500" alt="my linkedin photo!"/>  -->
             <!-- Example of image from local file -->
-            <img src="./images/friends.jpeg" height="500" width="500" alt="my friends!"/>
         </section>
-        <section>
+        <!-- <img src="./images/friends.jpeg" height="500" width="500" alt="my friends!"/> -->
+        <section id="about-me-section">
             <h1>
                 About me
             </h1>
-            <p>I'm a '23 CS Major from Mclean, VA!!! I like to run, play squash, and build my own keyboards! I'm an avid fan of Survivor and Ted Lasso. I have two dogs name Chip and Rosie who are the absolute cutest!</p>
+            <p>I'm a '23 CS Major from Mclean, VA!!! I like to run, play squash, and build my own keyboards! I'm an avid fan of Survivor and Ted Lasso. I have two dogs named Chip and Rosie who are the absolute cutest!</p>
+            <img src="https://media.licdn.com/dms/image/D4E03AQE1CvYf57HreA/profile-displayphoto-shrink_800_800/0/1667332820049?e=2147483647&v=beta&t=q-sqyY6dISmttLJrNCyOP_BrLvRx88RZUIacBjcHTj8" height="500" width="500" alt="my linkedin photo!"/> 
         </section>
-        <section>
+        <section id="project-section">
             <h1>Projects</h1>
-            <div>
+            <div class="project-container">
                 <img src="./images/stampd.png" width="500" height="200" alt="stampd" />
-                <h2>Stampd</h2>
-                <p>A mobile application to share your favorite pieces of media with your friends! Built with React Native and Express</p>
+                <div class="project-info">
+                    <h2>Stampd</h2>
+                    <p>A mobile application to share your favorite pieces of media with your friends! Built with React Native and Express</p>
+                </div>
             </div>
-            <div>
+            <div class="project-container">
                 <img src="./images/svpp.png" width="500" height="400" alt="stampd" />
-                <h2>SVPP</h2>
-                <p>A revamp of Dartmouth's Sexual Violence Prevent Program. Built with React and Ruby on Rails!!</p>
+                <div class="project-info">
+                    <h2>SVPP</h2>
+                    <p>A revamp of Dartmouth's Sexual Violence Prevent Program. Built with React and Ruby on Rails!!</p>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="skills-section">
             <h1>
-                My Skills
+                My Skills!
             </h1>
             <p>I'm an experienced full-stack developer! I've worked with the following stacks/frameworks</p>
-            <ul>
-                <li>React</li>
-                <li>React Native</li>
-                <li>Express</li>
-                <li>Ruby on Rails</li>
-                <li>MongoDB</li>
-                <li>Sequelize</li>
-                <li>Firebase/Firestore</li>
-            </ul>
+            <ol class="skills-list">
+                <li class="skills-list-item">
+                    <svg>
+                        <rect class="rotating-border" x=0 y=0 height=100% width=100% rx="25" ry="25" stroke="#61DBFB"/>
+                    </svg>
+                    <img src="./images/react.png" width=100 height=100 />
+                </li>
+                <li class="skills-list-item">
+                    <svg>
+                        <rect class="rotating-border" x=0 y=0 height=100% width=100% rx="25" ry="25" stroke="#cc0000"/>
+                    </svg>
+                    <img src="./images/ror.png" width=100 height=100 />
+                </li>
+                <li class="skills-list-item">
+                    <svg>
+                        <rect class="rotating-border" x=0 y=0 height=100% width=100% rx="25" ry="25" stroke="#589636"/>
+                    </svg>
+                    <img src="./images/mongo.png" width=275 height=100 />
+                </li>
+                <li class="skills-list-item">
+                    <svg>
+                        <rect class="rotating-border" x=0 y=0 height=100% width=100% rx="25" ry="25" stroke="#0072b1"/>
+                    </svg>
+                    <img src="./images/sequelize.png" width=200 height=200 />
+                </li>
+                <li class="skills-list-item">
+                    <svg>
+                        <rect class="rotating-border" x=0 y=0 height=100% width=100% rx="25" ry="25" stroke="#F5820D"/>
+                    </svg>
+                    <img src="./images/firebase.png" width=100 height=100 />
+                </li>
+                <li class="skills-list-item">
+                    <svg>
+                        <rect class="rotating-border" x=0 y=0 height=100% width=100% rx="25" ry="25" stroke="#68a063"/>
+                    </svg>
+                    <img src="./images/node.png" width=150 height=100 />
+                </li>
+            </ol>
         </section>
         <footer>
-            <ul>
-                <li><a href="https://www.instagram.com/cam_hao/">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100010491014285">Facebook</a></li>
-                <li><a href="https://github.com/camdenhao">Github</a></li>
+            <!-- https://codepen.io/OfigenusMaximus/pen/yLKOpqb -->
+            <h1>Find my socials!</h1>
+            <ul class="link-list">
+                <li><a href="https://www.instagram.com/cam_hao/"><i class="fa-brands fa-instagram instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/camden-hao/"><i class="fa-brands fa-linkedin linkedin"></i></a></li>
+                <li><a href="https://github.com/camdenhao"><i class="fa-brands fa-github github"></i></a></li>
             </ul>
         </footer>
     </body>
